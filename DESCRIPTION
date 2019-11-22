@@ -1,0 +1,11 @@
+Package: GPDetect
+Type: Package
+Title: GPDetect (GWAS Peak/Pattern Detection)
+Version: 0.1.0
+Author: Hendrik Bertram; Mehmet Gültas; Faisal Ramzan; Armin Schmitt
+Maintainer: Hendrik Bertram <hendrikbertram@protonmail.com>
+Description: Detection of patterns inherent in the test statistic values obtained from a GWAS analysis. 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
