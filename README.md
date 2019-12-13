@@ -24,7 +24,7 @@ example("GPDetect", ask = FALSE)
 
 The results will be saved in the data frame 'result' and scatter plots with the applied smoothed spline for each chromosome will be saved in the current directory in the folder 'results'.
 
-Each row in the data frame defines a peak with its start (Pos.right) and end position (Pos.right), their SNP ids (InitialSNP/lastSNP), the total number of SNPS within the peak (NSNP) as well as the height of this peak:
+Each row in the data frame defines a peak with its start (Pos.left) and end position (Pos.right), their corresponding SNP ids (InitialSNP/lastSNP), the total number of SNPs within the peak (NSNP) as well as the height of the peak:
 
 | Peak  | NSNP  | Pos.left  | Pos.right | InitialSNP    | lastSNP   |  Height   | Chr   |
 |:-----:|:-----:|:---------:|:---------:|:-------------:|:---------:|:---------:|:-----:|
@@ -32,7 +32,7 @@ Each row in the data frame defines a peak with its start (Pos.right) and end pos
 | 2     | 169   | 6.44007   | 8.15209   | M623          | M791      | 1.3910353 | 1     |
 | 3     | 122   | 9.21610   | 10.37611  | M910          | M1031     | 2.2179283 | 1     |
 
-For further information refer to the documentation of the `GPDetect()`
+For further information refer to the documentation of `GPDetect()`.
 
 # Prerequisites
 
@@ -44,4 +44,4 @@ GPDetect requires single-SNP based GWAS results as input. The format may look li
 |M41863 | 3 | 15.10616 | 1.64702166601606E-25 | 1.29677373810485E-20 | 5000 | -18084.0632491666 | -18031.0279927869 | -1.5211844846 | 0.1449217496 | 0.0844246696 | 110.1784446639 | 0.1113069532 | 42.0518232423 | 47.0029185959 | 27.9081213446 |
 M3943 | 1 | 39.81441 | 1.94516060715727E-25 | 1.29677373810485E-20 | 5000 | -18084.0632491666 | -18031.0901319964 | -1.5621555522 | 0.1490531951 | 0.0998462992 | 109.841378134 | 0.1113069532 | 42.0518232423 | 47.0029185959 | 27.9081213446 |
 
-The columns SNP, Chromosome, Position and a test statistic value (e.g. WaldStat) are mandatory for the function to work.
+However, only the columns SNP, Chromosome, Position and a test statistic value (e.g. WaldStat) are mandatory for the function to work.
